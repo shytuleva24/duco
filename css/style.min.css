@@ -510,13 +510,14 @@ body {
 }
 
 .practice__desc {
+    width: 80%;
     font-weight: 500;
     font-size: 1.25vw;
     line-height: 130%;
     text-align: center;
     color: #2d2d2d;
     margin-top: 1.389vw;
-    margin-bottom: 4.167vw
+    margin: 1.389vw auto 4.167vw;
 }
 
 .practice__list {
@@ -1682,7 +1683,9 @@ body {
     h2 {
         margin-bottom: 5.333vw
     }
-
+    .practice__elips2 {
+        display: none;
+    }
     .container {
         max-width: 94.667vw
     }
