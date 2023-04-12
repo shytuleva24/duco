@@ -82,7 +82,7 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    min-height: 100%
+    /* min-height: 100% */
 }
 
 .main {
@@ -125,7 +125,7 @@ ul {
 }
 
 .container {
-    max-width: 89.931vw;
+    max-width: 80%;
     margin: 0 auto
 }
 
@@ -490,7 +490,7 @@ body {
 .practice {
     padding-top: 4.097vw;
     position: relative;
-    height: 58.917vw
+    /* height: 58.917vw */
 }
 
 .practice h2,
@@ -526,13 +526,14 @@ body {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: space-between;
+    gap: 15px;
 }
 
 .practice__item {
     padding: 2.778vw 2.083vw;
     width: 28.889vw;
-    height: 21.875vw;
+    /* height: 21.875vw; */
     background: #fff;
     border: .069vw solid #0078fa;
     -webkit-box-shadow: 2.42vw 2.057vw 3.357vw rgba(51, 102, 255, .05);
@@ -579,9 +580,12 @@ body {
 .practice__elips1 {
     position: absolute;
     top: 38.667vw;
-    left: 0
+    left: 0;
+    /* z-index: -1; */
 }
-
+.candidate__elips1{
+    z-index: -1;
+}
 .practice__elips1 svg {
     width: 22.916vw;
     height: 22.916vw
@@ -590,7 +594,8 @@ body {
 .practice__elips2 {
     position: absolute;
     right: 0;
-    top: 44.667vw
+    top: 44.667vw;
+    z-index: -1;
 }
 
 .practice__elips2 svg {
@@ -627,6 +632,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 15px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
@@ -967,7 +973,7 @@ body {
 
 .services {
     padding-top: 9.583vw;
-    padding-bottom: 15.139vw;
+    padding-bottom: 5vw;
     position: relative
 }
 
@@ -1122,7 +1128,8 @@ body {
     width: 12.653vw;
     height: 14.653vw;
     left: 87.658vw;
-    top: 5.889vw
+    top: 5.889vw;
+    z-index: -1;
 }
 
 .services__elipse2 svg {
@@ -1130,7 +1137,8 @@ body {
     width: 20.208vw;
     height: 20.208vw;
     left: -5.139vw;
-    top: 35.583vw
+    top: 35.583vw;
+    z-index: -1;
 }
 
 .services__elipse3 svg {
@@ -1138,7 +1146,8 @@ body {
     width: 11.431vw;
     height: 12.431vw;
     left: 89vw;
-    top: 78.306vw
+    top: 78.306vw;
+    z-index: -1;
 }
 
 .services__elipse4 svg {
@@ -1146,7 +1155,8 @@ body {
     width: 15.833vw;
     height: 15.833vw;
     left: -2.861vw;
-    top: 120.486vw
+    top: 120.486vw;
+    z-index: -1;
 }
 
 .testimonials {
@@ -1343,7 +1353,7 @@ body {
 }
 
 .contact .container {
-    max-width: 83.056vw;
+    max-width: 83%;
     background: #fff;
     padding: .694vw;
     border-radius: .694vw;
@@ -1599,7 +1609,8 @@ body {
     width: 14.653vw;
     height: 14.653vw;
     top: .069vw;
-    right: -4vw
+    right: 0;
+    z-index: -1;
 }
 
 .about__page-info .container .elipse-2 {
@@ -1607,7 +1618,8 @@ body {
     width: 14.653vw;
     height: 14.653vw;
     top: 27.069vw;
-    right: 87vw
+    right: 87vw;
+    z-index: -1;
 }
 
 .about__page-info .container h2 {
@@ -1679,7 +1691,7 @@ body {
     z-index: 9999999
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 440px) {
     h2 {
         margin-bottom: 5.333vw
     }
@@ -1687,7 +1699,7 @@ body {
         display: none;
     }
     .container {
-        max-width: 94.667vw
+        max-width: 90%
     }
 
     .header {
@@ -1989,7 +2001,7 @@ body {
         flex-direction: column;
         -webkit-box-align: center;
         -ms-flex-align: center;
-        align-items: center
+        align-items: center;
     }
 
     .practice__item {
@@ -2036,10 +2048,6 @@ body {
         width: 27.111vw;
         height: 49.111vw;
         display: block
-    }
-
-    .reviews {
-        padding-bottom: 38.4vw
     }
 
     .reviews h2,
@@ -2141,7 +2149,9 @@ body {
     .contacts__info {
         padding-top: 0
     }
-
+    .contact__right form {
+        width: 90%;
+    }
     .contacts__info h2,
     .contacts span {
         font-size: 10.133vw;
@@ -2273,10 +2283,6 @@ body {
         border-radius: 12.533vw
     }
 
-    .services {
-        padding-top: 16.267vw
-    }
-
     .services__elipse1 {
         display: none
     }
@@ -2313,8 +2319,8 @@ body {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        width: 94.667vw;
-        height: 162.133vw;
+        width: 100%;
+        height: auto;
         border-radius: 5.333vw;
         margin-bottom: 8vw
     }
@@ -2346,7 +2352,8 @@ body {
         order: 1
     }
 
-    .services__item .right img {
+    .services__item .right img,
+    .services__item .right img.img-left {
         width: 100%;
         height: 74.133vw;
         border-radius: 5.333vw 5.333vw 0vw 0vw;
@@ -2364,7 +2371,7 @@ body {
         font-size: 4.267vw;
         line-height: 160%;
         width: 100%;
-        margin-bottom: 10.667vw;
+        margin-bottom: 9vw;
         text-align: center
     }
 
@@ -2577,7 +2584,7 @@ body {
     }
 
     .reviews {
-        padding-bottom: 16vw
+        padding-bottom: 0
     }
 
     .contact {
